@@ -1,5 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Greeting from "./components/Greeting";
+import CurrentTime from "./components/CurrentTime";
+import EventCard from "./components/EventCard";
 
 function App() {
 	return (
@@ -12,26 +15,10 @@ function App() {
 				<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
 					Learn React
 				</a>
+				<EventCard name="встреча" date="17.02.2025" place="переговорка" />
+				<EventCard name="концерт DSCruew" date="22.02.2025" place="Концертный зал ДГТУ" />
+				<EventCard name="совещание" date="18.02.2025" place="кабинет начальника ОЛ" />
 			</header>
-		</div>
-	);
-}
-
-function Greeting() {
-	return (
-		<div>
-			<h1>Привет, React!</h1>
-		</div>
-	);
-}
-
-function CurrentTime() {
-	const currentDate = new Date();
-	let currentTime = `${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
-	return (
-		<div>
-			<h2 clasName="timeHeading">Текущее время: </h2>
-			<p>{currentTime.toLocaleString("en-US", { timeZone: "Europe/Moscow" })}</p>
 		</div>
 	);
 }
