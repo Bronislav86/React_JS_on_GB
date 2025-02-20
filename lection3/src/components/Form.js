@@ -20,7 +20,7 @@ const InputForm = () => {
                 <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
                 <button type="submit">Submit</button>
             </form>
-            {submittedValue && <p>Subbmittrd value: {submittedValue}</p>}
+            {submittedValue && <p>Subbmitted value: {submittedValue}</p>}
         </div>
     );
 };
