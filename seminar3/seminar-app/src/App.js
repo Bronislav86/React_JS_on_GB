@@ -4,6 +4,7 @@ import Greeting from "./components/Greeting";
 import Counter from "./components/Counter";
 import MessageList from "./components/MessageList";
 import TextDisplayForm from "./components/TextDisplayForm";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
             <MessageList />
             <TextDisplayForm/>
         </main>
+        <footer className="App-footer">
+            <ThemeSwitcher/>
+        </footer>
     </div>
   );
 }

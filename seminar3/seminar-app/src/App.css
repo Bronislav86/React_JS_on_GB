@@ -73,3 +73,18 @@
   display: flex;
   flex-direction: column;
 }
+
+.App-footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+}
+
+.footer_content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 900vw;
+  max-height: 300px;
+  padding: 10px;}
