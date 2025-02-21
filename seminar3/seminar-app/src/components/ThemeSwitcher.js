@@ -15,7 +15,6 @@ const ThemeSwitcher = () => {
 
     const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
-    console.log(theme)
     return (
         <div>
             <Content theme={theme}/>
@@ -29,7 +28,7 @@ const ThemeSwitcher = () => {
                 <Switch {...label} defaultChecke onChange={toggleLight} />
             </div>
         );
-    };
+    }
 
 };
 
