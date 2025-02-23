@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.toDoList_container{
+  padding-left: calc(10px + 30vmin);
+  padding-right: calc(10px + 30vmin);
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#filled-basic{
+  max-width: 650px;
+}
+.toDoList_button{
+  max-width: 150px;
+}
