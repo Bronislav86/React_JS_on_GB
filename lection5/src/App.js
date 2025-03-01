@@ -150,7 +150,7 @@ import store from "./components/store";
 //     );
 // };
 //
-// const ThemeToggle = () => {
+// const ThemeSwitcher = () => {
 //     const {theme, toggleTheme } = useTheme();
 //     return (
 //         <button onClick={toggleTheme}>Нажми чтобы переключить на {theme === "light" ? 'темную' : 'светлую'} тему</button>
@@ -175,7 +175,7 @@ import store from "./components/store";
 //             <NotesContext.Provider value={{ notes, addNote }}>
 //                 <div className="content" style={{ color: theme === "light" ? "black" : "white", background: theme === "light" ? "white" : "black" }}>
 //                     <h1>Список</h1>
-//                     <ThemeToggle />
+//                     <ThemeSwitcher />
 //                     <NotesList/>
 //                     <NoteInput />
 //                 </div>
