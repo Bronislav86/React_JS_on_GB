@@ -7,8 +7,9 @@ import {FilterContext} from "../contexts/FilterContext";
 const TodoList = () => {
     // Получаем список задач из Redux хранилища
     const todos = useSelector(state => state.todos);
-    const dispatch = useDispatch();
+    console.log('Текущие задачи:', todos); // Логирование состояния
 
+    const dispatch = useDispatch();
     const {filter} = useContext(FilterContext);
 
     const filteredTodos = withFilter(todos, filter);
@@ -30,9 +31,9 @@ const TodoList = () => {
         <ol>
             {filteredTodos.map(todo => (
                 <li
-                key={todo.id}
-                onClick={() => handleToggleTodo(todo.id)}
-                style={{ textDecoration: todo.completed ? 'line-through' : "none" }}
+                    key={todo.id}
+                    onClick={() => handleToggleTodo(todo.id)}
+                    style={{ textDecoration: todo.completed ? 'line-through' : "none" }}
                 >
                     {todo.text}<button onClick={() => handleDeleteTodo(todo.id)}>Удалить</button>
                 </li>

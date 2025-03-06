@@ -1,8 +1,5 @@
 .App {
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
 }
 
 .App-logo {
@@ -38,4 +35,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.catalog {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.catalog-item {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  max-width: max-content;
+  padding: 15px;
+}
+.edit_img {
+  width: 2vmin;
+  height: 2vmin;
+}
+
+.catalog_isAvailable_false {
+  text-decoration: line-through;
 }
