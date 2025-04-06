@@ -1,0 +1,67 @@
+@import "_vars"
+@import '_mixins'
+
+.top-head-menu
+  background-color: #f8f3f4
+  padding-top: 60px
+  padding-bottom: 60px
+
+  &__box 
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+  &__heading 
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 29px
+    color: $colorSelectSite
+
+.top-head
+  background-color: #f8f3f4
+  padding-top: 60px
+  padding-bottom: 60px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 64px
+
+  &__box
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+  &__heading
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 29px
+    color: $colorSelectSite
+
+.breadCrumbs 
+  display: flex
+
+  &__link 
+    font-weight: 300
+    font-size: 14px
+    color: #636363
+
+    &:hover 
+      color: $colorSelectSite
+
+  &__box:last-of-type .breadCrumbs__link 
+    font-weight: 700
+    color: $colorSelectSite
+
+  &__box:not(:last-child)::after
+    content: '/'
+    padding-left: 8px
+    padding-right: 8px
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #636363
+

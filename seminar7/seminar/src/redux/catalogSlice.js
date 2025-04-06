@@ -29,8 +29,7 @@ export const catalogSlice = createSlice({
             state.array.push(product);
         },
         changeAvailable: (state, {payload: product}) => {
-            console.log(product);
-            if (!state.array.some(element => element.id === product.id)) {
+                if (!state.array.some(element => element.id === product.id)) {
                 return;
             }
             state.array = state.array.filter(element => element.id !== product.id);

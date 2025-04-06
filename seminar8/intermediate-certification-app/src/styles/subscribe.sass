@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,1000,3000,4000,7000,9001,1001,3001,4001,7001,900&display=swap")
+@import 'vars'
+@import 'mixins'
+
+.subscribe
+  background-image: url(../assets/img/subscribe_background.webp)
+  background-size: cover
+  background-repeat: no-repeat
+
+  &__background
+    background: rgba(244, 244, 244, 0.7)
+
+  &__background_conteiner
+    max-width: 1600px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    text-align: center
+    gap: 224px
+    margin: 0 auto 0 auto
+    padding-top: 97px
+    padding-bottom: 126px
+
+  &__background_conteiner-article_1
+    max-width: 359px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 30px
+    padding-bottom: 27px
+
+  &__background_conteiner-article_1 img
+    width: 96px
+    height: 96px
+
+  &__background_conteiner-article_1 p
+    font-size: 20px
+    color: #222224
+
+  &__background_conteiner-article_2
+    display: flex
+    flex-direction: column
+
+  &__background_conteiner-article_2 h2
+    font-weight: 700
+    font-size: 24px
+    line-height: 167%
+    color: #222224
+
+  &__background_conteiner-article_2 h3
+    font-weight: 400
+    font-size: 18px
+    margin-bottom: 32px
+    color: #222224
+
+
+.from
+  display: flex
+  flex-direction: row
+  justify-content: center
+
+
+.input
+  &__email
+    background: #e1e1e1
+    font-weight: 400
+    font-size: 14px
+    color: #222224
+    border: none
+    border-radius: 25px 0 0 25px
+    padding: 17px 67px 16px 22px
+    &:focus
+      outline: none
+
+    &:focus::-webkit-input-placeholder
+      visibility: hidden
+
+    &:focus::-moz-placeholder
+      visibility: hidden
+
+    &:focus:-moz-placeholder
+      visibility: hidden
+
+    &:focus:-ms-input-placeholder
+      visibility: hidden
+
+  &__submit
+    background: #f16d7f
+    font-size: 14px
+    color: #fff
+    border: none
+    border-radius: 0 25px 25px 0
+    padding: 17px 20px 16px 20px

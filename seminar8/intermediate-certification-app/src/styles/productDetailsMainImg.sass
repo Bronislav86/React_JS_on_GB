@@ -1,0 +1,227 @@
+@import "_vars"
+@import "_mixins"
+
+.product
+  background: #f7f7f7
+  height: 777px
+  margin-bottom: -65px
+  border: 1px solid rgb(234, 234, 234)
+  box-sizing: border-box
+
+.productContainer 
+  max-width: 1600px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+.previous 
+  position: absolute
+  left: 0
+
+  &__button 
+    background-color: rgba(42, 42, 42, 0.15)
+    border: none
+    padding: 12.65px 17.3px
+    cursor: pointer
+
+    &:hover path 
+      fill: $colorSelectSite
+
+
+.forward 
+  position: absolute
+  right: 0
+
+
+  &__button 
+    background-color: rgba(42, 42, 42, 0.15)
+    border: none
+    padding: 12.65px 17.3px
+    cursor: pointer
+
+    &:hover path 
+      fill: $colorSelectSite
+  
+
+.product-desc 
+  background-color: #fff
+  max-width: 1140px
+  border: 1px solid rgb(234, 234, 234)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding-top: 64.5px
+  padding-bottom: 64.5px
+  position: relative
+  z-index: 1
+  margin-bottom: 128px
+  box-sizing: border-box
+
+  &__b-line 
+    max-width: 642px
+    border-bottom: $colorSelectSite
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    gap: 12px
+    padding-bottom: 64.5px
+    margin-bottom: 64.5px
+
+
+  &__heading 
+    font-weight: 300
+    font-size: 14px
+    color: $colorSelectSite
+
+
+  &__lable 
+    margin-bottom: 36.5px
+    font-weight: 300
+    font-size: 18px
+    color: #4d4d4d
+
+
+  &__description 
+    width: 555px
+    font-weight: 300
+    font-size: 14px
+    text-align: center
+    color: #5e5e5e
+    margin-bottom: 20px
+
+
+  &__price 
+    font-weight: 300
+    font-size: 24px
+    color: $colorSelectSite
+
+
+  &__bottomBtn 
+    display: flex
+    flex-direction: row
+    gap: 23px
+    border: 0.5px solid $colorSelectSite
+    padding: 15px 57px 9px 24px
+    background: white
+    cursor: pointer
+    margin-bottom: 9.5px
+
+
+.choose 
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  gap: 23px
+  margin-bottom: 48.5px
+
+  &__item 
+    display: flex
+    align-items: center
+    gap: 9px
+
+  &__heading 
+    font-weight: 400
+    font-size: 14px
+    color: #6f6e6e
+
+.cards-Products 
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: repeat(1, 1fr)
+  gap: 30px
+  margin-bottom: 128px
+
+  &__card 
+    background-color: rgb(248, 248, 248)
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 360px
+    text-align: left
+
+  &__card-image_1 
+    background-image: url(../assets/img/more_prod1.webp)
+    width: 360px
+    height: 420px
+    margin-bottom: 24px
+
+  &__card-image_1:hover .cardsOfProducts__card-hover 
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+  &__card-image_2 
+    background-image: url(../assets/img/more_prod2.webp)
+    width: 360px
+    height: 420px
+    margin-bottom: 24px
+
+  &__card-image_2:hover .cardsOfProducts__card-hover 
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+  &__card-image_3 
+    background-image: url(../assets/img/more_prod3.webp)
+    width: 360px
+    height: 420px
+    margin-bottom: 24px
+
+  &__card-image_3:hover .cardsOfProducts__card-hover 
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+  &__card-hover 
+    background: rgba(58, 56, 56, 0.86)
+    width: 100%
+    height: 100%
+    display: none
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+  &__card_hover-button 
+    border: 1px solid #FFFFFF
+    background-color: rgba(58, 56, 56, 0.7)
+    opacity: 0.7
+    padding: 11px 16px 9px 14px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    gap: 11px
+    cursor: pointer
+
+  &__card_hover-button a 
+    margin: 0 0 0 0
+    padding: 0 0 0 0
+
+  &__card_hover-button span 
+    color: #fff
+    font-size: 14px
+
+.cardInformation
+  padding-bottom: 24px
+
+.cardInformation h3 
+  color: rgb(0, 0, 0)
+  font-size: 13px
+  line-height: 16px
+  text-align: left
+  margin-bottom: 16px
+
+.cardInformation p 
+  font-size: 14px
+  font-weight: 300
+  line-height: 17px
+  text-align: left
+  max-width: 315px
+  margin-bottom: 16px
