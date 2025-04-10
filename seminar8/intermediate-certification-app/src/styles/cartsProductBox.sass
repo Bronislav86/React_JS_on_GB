@@ -13,6 +13,7 @@
     flex-direction: column
     justify-content: space-between
     gap: 40px
+    min-width: 750px
 
   &__carts 
     position: relative
@@ -190,3 +191,68 @@
     padding: 15px 42px
     cursor: pointer
 
+@media (min-width: 768px) and (max-width: 1140px)
+
+  .productCartBox
+    flex-direction: column
+    gap: 40px
+    margin-bottom: 133px
+
+    &__carts-box
+      min-width: 736px
+
+    &__button-box
+      justify-content: center
+      gap: 48px
+      margin-top: 22px
+
+    &__order
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      gap: 31px
+
+    &__head
+      margin-top: 24px
+
+    &__submit
+      margin-top: 3px
+
+    &__total
+      margin-top: 40px
+
+@media (max-width: 767px)
+
+  .productCartBox
+    flex-direction: column
+    gap: 40px
+    margin-bottom: 96px
+
+    &__carts-box
+      gap: 32px
+      min-width: 356px
+
+    &__button-box
+      justify-content: space-between
+      gap: 9px
+      margin-top: -2px
+
+    &__butt
+      font-size: 12px
+      line-height: 14px
+      padding: 9px 20px 10px 20px
+
+    &__order
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: 40px
+
+    &__head
+      margin-top: 8px
+
+    &__submit
+      margin-top: 3px
+
+    &__total
+      margin-top: 0

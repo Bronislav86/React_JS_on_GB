@@ -166,12 +166,14 @@ export const productsSlice = createSlice({
     reducers: {
         filterBySize: (state, action) => {
             state.sizeFilters = action.payload;
-            if(action.payload.length === 0) {
+            if (action.payload.length === 0) {
                 state.filteredProducts = state.products;
             } else {
-                state.filteredProducts = state.products.filter(product => action.payload.includes(product.size));
+                state.filteredProducts = state.products.filter(product =>
+                    action.payload.includes(product.size)
+                );
             }
-        }
+        },
     }
 })
 

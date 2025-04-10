@@ -1,6 +1,11 @@
 @import './_vars'
 @import './_mixins'
 
+.center 
+  padding-left: calc(50% - $widthSite / 2)
+  padding-right: calc(50% - $widthSite / 2)
+
+
 summary
   display: block
 
@@ -123,3 +128,35 @@ summary::-webkit-details-marker
     display: flex
     flex-direction: column
     gap: 6px
+
+@media (min-width: 768px) and (max-width: 1140px)
+
+  .filter-sort 
+    height: 92px
+    padding-top: 24px
+    justify-content: space-between
+
+  
+@media (max-width: 767px)
+
+  .filter-sort 
+    height: 77px
+    justify-content: space-between
+    margin-bottom: 32px
+
+  .filter 
+    width: 60px
+
+  .filter__hidden 
+    display: none
+    visibility: hidden
+
+  .filter__summary svg 
+    width: 37.5px
+    height: 25px
+
+  .filter__content 
+    width: 175px
+
+  .sort__heading 
+    font-size: 12px

@@ -8,12 +8,19 @@
   border: 1px solid rgb(234, 234, 234)
   box-sizing: border-box
 
-.productContainer 
+
+.productContainer
   max-width: 1600px
   display: flex
   flex-direction: row
   justify-content: center
   align-items: center
+
+
+.center
+  padding-left: calc(50% - $widthSite / 2)
+  padding-right: calc(50% - $widthSite / 2)
+
 
 .previous 
   position: absolute
@@ -128,7 +135,8 @@
     font-size: 14px
     color: #6f6e6e
 
-.cards-Products 
+
+.cards-Products
   display: grid
   grid-template-columns: repeat(3, 1fr)
   grid-template-rows: repeat(1, 1fr)
@@ -208,6 +216,7 @@
     color: #fff
     font-size: 14px
 
+
 .cardInformation
   padding-bottom: 24px
 
@@ -218,10 +227,81 @@
   text-align: left
   margin-bottom: 16px
 
-.cardInformation p 
+
+.cardInformation p
   font-size: 14px
   font-weight: 300
   line-height: 17px
   text-align: left
   max-width: 315px
   margin-bottom: 16px
+
+
+@media (min-width: 768px) and (max-width: 1140px)
+
+  .center
+    padding-left: calc(50% - 368px)
+    padding-right: calc(50% - 368px)
+
+  .productContainer
+    max-width: 768px
+
+  .mainSection 
+    display: flex
+    flex-direction: column
+
+  .product-desc 
+    padding-top: 65px
+
+  .products 
+    margin-left: auto
+    margin-right: auto
+
+  .cards-Products 
+    grid-template-columns: repeat(2, 1fr)
+    gap: 16px
+
+    &__card_tablet 
+      display: none
+
+  .blackBlock__conteiner 
+    max-width: 768px
+    flex-direction: column
+    gap: 48px
+    padding-top: 48px
+    padding-bottom: 64px
+
+  .subscribe__background_conteiner 
+    max-width: 768px
+    flex-direction: column
+    gap: 48px
+    padding-top: 64px
+    padding-bottom: 140px
+
+  .footer__conteiner 
+    max-width: 704px
+    flex-direction: row
+    justify-content: space-between
+    padding: 30px 0 30px 0
+
+@media (max-width: 767px) 
+
+  .center
+    padding-left: calc(50% - 178px)
+    padding-right: calc(50% - 178px)
+
+  .products
+    margin-left: auto
+    margin-right: auto
+
+  .product-desc
+    margin-bottom: 64px
+
+  .cards-Products
+    grid-template-columns: repeat(1, 1fr)
+    gap: 0
+    justify-items: center
+    margin-bottom: 64px
+
+    &__card_mobile
+      display: none

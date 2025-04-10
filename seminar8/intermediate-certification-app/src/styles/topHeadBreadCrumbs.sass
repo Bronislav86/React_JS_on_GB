@@ -3,13 +3,15 @@
 
 .top-head-menu
   background-color: #f8f3f4
-  padding-top: 60px
-  padding-bottom: 60px
 
-  &__box 
+  &__box
+    position: relative
     display: flex
-    align-items: center
     justify-content: space-between
+    align-items: center
+    padding-top: 60px
+    padding-bottom: 60px
+    margin: 0 auto
 
 
   &__heading 
@@ -64,4 +66,25 @@
     font-size: 14px
     line-height: 17px
     color: #636363
+
+
+@media (min-width: 768px) and (max-width: 1140px)
+
+  .top-head__box
+      max-width: 704px
+
+  .top-head-menu__box
+      max-width: 704px
+
+@media (max-width: 767px)
+
+  .top-head__box
+      display: flex
+      flex-direction: column
+      gap: 32px
+
+  .top-head-menu__box
+      display: flex
+      flex-direction: column
+      gap: 32px
 

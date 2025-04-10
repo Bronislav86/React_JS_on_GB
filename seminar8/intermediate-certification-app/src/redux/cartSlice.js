@@ -9,38 +9,38 @@ export const cartSlice = createSlice({
     name: "cart",
     initialState: {
         products:[
-            {
-                id: 1,
-                name: "Product1",
-                card_img: 'card__image_1',
-                img: product1,
-                title: 'ELLERY X M’O CAPSULE',
-                description: 'Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter\n' +
-                    '                                of&nbsp;cool\n' +
-                    '                                Kym\n' +
-                    '                                Ellery teams up&nbsp;with Moda Operandi',
-                price: "52.00",
-                color: 'red',
-                size: 'S',
-                quantity: 1,
-                available: true
-            },
-            {
-                id: 2,
-                name: "Product2",
-                card_img: 'card__image_2',
-                img: product2,
-                title: 'ELLERY X M’O CAPSULE',
-                description: 'Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter\n' +
-                    '                                of&nbsp;cool\n' +
-                    '                                Kym\n' +
-                    '                                Ellery teams up&nbsp;with Moda Operandi',
-                price: "52.00",
-                color: 'red',
-                size: 'XL',
-                quantity: 1,
-                available: true
-            },
+            // {
+            //     id: 1,
+            //     name: "Product1",
+            //     card_img: 'card__image_1',
+            //     img: product1,
+            //     title: 'ELLERY X M’O CAPSULE',
+            //     description: 'Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter\n' +
+            //         '                                of&nbsp;cool\n' +
+            //         '                                Kym\n' +
+            //         '                                Ellery teams up&nbsp;with Moda Operandi',
+            //     price: "52.00",
+            //     color: 'red',
+            //     size: 'S',
+            //     quantity: 1,
+            //     available: true
+            // },
+            // {
+            //     id: 2,
+            //     name: "Product2",
+            //     card_img: 'card__image_2',
+            //     img: product2,
+            //     title: 'ELLERY X M’O CAPSULE',
+            //     description: 'Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter\n' +
+            //         '                                of&nbsp;cool\n' +
+            //         '                                Kym\n' +
+            //         '                                Ellery teams up&nbsp;with Moda Operandi',
+            //     price: "52.00",
+            //     color: 'red',
+            //     size: 'XL',
+            //     quantity: 1,
+            //     available: true
+            // },
         ]
     },
     reducers: {

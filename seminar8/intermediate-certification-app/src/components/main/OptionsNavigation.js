@@ -4,7 +4,7 @@ const OptionsNavigation = () => {
     return (
         <>
             <h2 style={{display: 'none'}}>Карточки с разделами сайта</h2>
-            <div className="options">
+            <div className="options conteiner">
                 <div className="card1">
                     <div className="layOfCard">
                         <a href="">

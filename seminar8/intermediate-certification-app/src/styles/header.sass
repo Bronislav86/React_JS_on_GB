@@ -7,7 +7,7 @@
 
 .navButtons 
   max-width: 1139px
-  margin: 0px auto
+  margin: 0 auto
   display: flex
   flex-direction: row
   justify-content: space-between
@@ -26,3 +26,23 @@
   flex-direction: row
   align-items: center
   gap: 33px
+
+@media (min-width: 768px) and (max-width: 1140px)
+
+  .navButtons
+    max-width: 704px
+
+  .rightButtons
+    gap: 25px
+
+
+@media (max-width: 767px)
+
+  .navButtons
+    max-width: 343px
+
+  .hiden-buttons
+    display: none
+
+  .rightButtons__sticker
+    display: none

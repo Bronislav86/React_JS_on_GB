@@ -5,8 +5,8 @@ const TopHead = ({ children }) => {
     if (!children) {
     return (
         <div className="top-head-menu">
-            <div className="top-head__box center">
-                <h2 className="top-head__heading">NEW ARRIVALS</h2>
+            <div className="top-head-menu__box center">
+                <h2 className="top-head-menu__heading">NEW ARRIVALS</h2>
                 <nav className="breadCrumbs">
                     <div className="breadCrumbs__box"><Link to={'/'} className="breadCrumbs__link">HOME</Link></div>
                     <div className="breadCrumbs__box"><Link to={"#"} className="breadCrumbs__link">MENU</Link></div>

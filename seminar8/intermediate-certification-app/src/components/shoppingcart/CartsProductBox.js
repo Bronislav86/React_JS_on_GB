@@ -35,7 +35,7 @@ const CartsProductBox = () => {
     return (
         <div className="productCartBox center">
             <div className="productCartBox__carts-box">
-                {productsInCart.length === 0 ? <div>Корзина пуста</div> : productsInCart.map((product) =>
+                {productsInCart.length === 0 ? <div>Cart is Empty</div> : productsInCart.map((product) =>
                     <div className="productCartBox__carts" key={product?.id}>
                         <img className="productCartBox__img" src={product?.img} alt="photo_of_product"/>
                         <div className="productCartBox__description">

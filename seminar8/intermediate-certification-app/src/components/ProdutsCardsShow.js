@@ -1,23 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 import {addNewProductToCart} from "../redux/cartSlice";
 
 const ProductsCardsShow = ( { countOfCards }) => {
     const dispatch = useDispatch();
-    const cards = useSelector(state => state.productsCards.filteredProducts || []);
+    const cards = useSelector(state => state.productsCards?.filteredProducts.length > 0 ?
+        state.productsCards.filteredProducts : state.productsCards.products || []);
 
     const handleAddToCart = (product) => {
 
         dispatch(addNewProductToCart(product));
     }
 
+
     return (
         <>
             {cards.map((product, count) => count < countOfCards ?  (
                 <div className="card" key={product.id}>
                     <div className={product.card_img}>
-                        <Link to={`/shoppingcart`}>
+                        <Link to={`/productdetails`}>
                             <div className="card__hover">
                                 <button className="card__hover-button" onClick={() => handleAddToCart(product)}>
                                     <svg width="27" height="25" fill="#fff" xmlns="http://www.w3.org/2000/svg">
